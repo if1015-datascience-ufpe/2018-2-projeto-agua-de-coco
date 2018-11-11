@@ -1,0 +1,85 @@
+\documentclass[review]{elsarticle}
+
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{lineno,hyperref}
+\modulolinenumbers[5]
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% Elsevier bibliography styles
+%%%%%%%%%%%%%%%%%%%%%%%
+%% To change the style, put a % in front of the second line of the current style and
+%% remove the % from the second line of the style you would like to use.
+%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Numbered
+%\bibliographystyle{model1-num-names}
+
+%% Numbered without titles
+%\bibliographystyle{model1a-num-names}
+
+%% Harvard
+%\bibliographystyle{model2-names.bst}\biboptions{authoryear}
+
+%% Vancouver numbered
+%\usepackage{numcompress}\bibliographystyle{model3-num-names}
+
+%% Vancouver name/year
+%\usepackage{numcompress}\bibliographystyle{model4-names}\biboptions{authoryear}
+
+%% APA style
+%\bibliographystyle{model5-names}\biboptions{authoryear}
+
+%% AMA style
+%\usepackage{numcompress}\bibliographystyle{model6-num-names}
+
+%% `Elsevier LaTeX' style
+\bibliographystyle{elsarticle-num}
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{Proposta de Projeto}
+
+%% Authors
+\author{Alexsandro Carvalho}
+\ead{avsc@cin.ufpe.br}
+
+\author{Jeffson Simões}
+\ead{jcss3@cin.ufpe.br}
+
+\begin{abstract}
+Este texto propõe um projeto para a cadeira de Introdução à Ciência dos Dados do Centro de Informática - UFPE.
+\end{abstract}
+
+\begin{keyword}
+data science\sep tourism
+\end{keyword}
+
+\end{frontmatter}
+
+\linenumbers
+
+\section{Introdução}
+Nosso grupo decidiu analisar a influência dos diversos empreendimentos turísticos existentes no Brasil sobre a quantidade de turistas estrangeiros que visitam nosso país.
+
+\section{Os Dados}
+Os dados que pretendemos utilizar vêm do Portal Brasileiro de Dados Abertos\footnote{Portal Brasileiro de Dados Abertos: dados.gov.br}. Os datasets são: a quantidade de turistas de cada país que visitam cada estado do Brasil por mês\footnote{Turistas visitando o país: dados.gov.br/dataset/chegada-turistas} e as listas de pessoas físicas e jurídicas que atuam no setor do turismo\footnote{Dados do minstério do turismo: dados.gov.br/organization/ministerio-do-turismo-mtur}, incluindo:
+\begin{itemize}
+\item Restaurantes, cafeterias e bares
+\item Organizadoras de eventos
+\item Locadoras de veículos
+\item Empreendimentos de entretenimento e lazer
+\item Centros de convenções
+\item Parques temáticos
+\item Meios de hospedagem
+\end{itemize}
+
+\section{Análises Propostas}
+Avaliar quais empreendimentos tem maior influência sobre a chegada de turistas, se esses fatores mudaram com o passar do tempo, se eles são diferentes para turistas de países diferentes, assim como avaliar quais nacionalidades de turistas são mais comuns para cada região do país e se as linguas faladas pelas hospedagens se correlacionam com essas nacionalidades.
+
+\end{document}
