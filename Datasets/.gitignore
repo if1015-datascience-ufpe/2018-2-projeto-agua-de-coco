@@ -1,2 +1,0 @@
-# Os CSVs são baixados pelo batch ao invés de pelo github para evitar mandar arquivos muito grandes.
-*.csv
