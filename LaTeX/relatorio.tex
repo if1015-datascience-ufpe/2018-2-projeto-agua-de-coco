@@ -124,12 +124,14 @@ O gráfico demonstrou que houve aumento, o que a princípio, parece contradizer 
 
 O segundo gráfico mostra o porquê do ano não demonstrar influência na chegada pela regressão. As oscilações causadas pelo efeito dos meses são tão grandes que elas mascaram o crescimento anual do número de turistas. A conclusão aqui é a de que o turismo está de fato crescendo com os anos, mas pouco.
 
-\subsection{As Hospedagens, que oferecem X idioma no atendimento a Turistas estrangeiros, influênciam no fluxo de Turistas}
+\subsection{Causalidade entre quantidade de hospedagens que oferecem X idioma no atendimento e quantidade de turistas estrangeiros}
 
 \includegraphics[width=\textwidth]{Segment-Host-Tourist}
 \includegraphics[width=\textwidth]{Segment-Host-Tourist-2}
 
-Para avaliar as hipóteses, criamos gráficos das séries temporais obtidas - Chegadas de Turistas e Quantidade de Hospedagens - e comparamos as variáveis nos dois gráficos de acordo com o intervalo de tempo, no caso, comparamos a quantidade de hospedagens que ofereciam atendimento em espanhol com a série temporal da quantidade de turistas argentinos que chegavam.
+Para avaliar as hipóteses “As Hospedagens, que oferecem X idioma no atendimento a Turistas estrangeiros, influência no fluxo de Turistas?” , “A quantidade de Turistas influencia na quantidade de hospedagens daquela região” e a última “As Olimpíadas influenciaram no aumento de hospedagens nas regiões do Rio e alguns estados próximos ?” tentamos usar um modelo de predição para séries temporais (modelo Arima) mas não tivemos muito sucesso ao tentar implementá-lo.
+
+Com isso partimos para uma abordagem de menor acurácia que seria a de criar gráficos das séries temporais obtidas - Chegadas de Turistas e Quantidade de Hospedagens - e comparar as variáveis nos dois gráficos de acordo com o intervalo de tempo, no caso, comparamos a quantidade de hospedagens que ofereciam atendimento em espanhol com a série temporal da quantidade de turistas argentinos que chegavam. Devido a encontrarmos um pico na quantidade de hospedagens no ano de 2016 pudemos ver que as Olimpíadas influenciaram na quantidade de hospedagens.
 
 Devido a encontrarmos um pico na quantidade de hospedagens no ano de 2016 pudemos ver que as Olimpíadas influenciaram na quantidade de hospedagens.
 
