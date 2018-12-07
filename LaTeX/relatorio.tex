@@ -75,6 +75,22 @@ Originalmente, pretendíamos utilizar os datasets disponibilizados no Portal Bra
 
 Durante o desenvolvimento do projeto, encontramos uma ferramenta do Ministério do Turismo, o Extrator de Chegadas de Turistas Internacionais ao Brasil. Foi dado preferência a usá-lo no lugar do PBDA por 2 motivos: primeiro, porque ele estava mais atualizado e continha os dados de 2017; o segundo motivo foi porque os csvs do PBDA não mantinham um padrão nas suas colunas, o que dificultava juntar os dados.
 
+\section{Análise Exploratória}
+
+Para entender melhor os dados a serem trabalhados, foram feitos diversos gráficos com o objetivo de revelar fenômenos dos datasets que levassem a hipóteses interessantes de se analisar.
+
+\includegraphics[width=\textwidth]{Bars-Year}
+
+Inicialmente, foram feitos gráficos de barras do total de cada mês nos 8 últimos anos. Nesses gráficos, geralmente houve um padrão de o número de visitantes ser mais alto nos primeiros e últimos meses. Porém uma notável exceção foi o ano de 2014, onde os meses com maior número de turistas foram junho e julho, os meses durante os quais estava ocorrendo a Copa do Mundo. Isso serviu de motivação para analisar a hipótese do efeito de eventos esportivos no turismo.
+
+\includegraphics[width=\textwidth]{Heatmap-Year-UF}
+
+Uma nova visualização, agora exibindo as chegadas mensais por estado. Com isso, foi observado que 4 estados concentram quase todos os turistas: Paraná, Rio de Janeiro, Rio Grande do Sul e São Paulo.
+
+\includegraphics[width=\textwidth]{Bars-Country}
+
+Uma plotagem dos 25 países com mais turistas visitando o Brasil. Nela é possível ver que o turistas argentinos são a grande maioria dos turistas estrangeiros. Além da Argentina, os países que mais visitam o Brasil são Sulamericanos ou europeus, com os EUA sendo a única exceção.
+
 \section{Hipóteses testadas}
 \subsection{Eventos esportivos afetam a chegada de turistas}
 Para avaliar a hipótese de que os eventos esportivos Copa do Mundo e Olimpíadas afetaram a chegada de turistas no Brasil, foi feita uma regressão nos anos e meses, usando o histórico de 2008 a 2017. Para incluir os eventos na regressão, foram adicionadas uma variável para cada evento, indicando se ele estava ocorrendo no momento ou não.
@@ -107,5 +123,17 @@ O gráfico demonstrou que houve aumento, o que a princípio, parece contradizer 
 \includegraphics[width=\textwidth]{Segment-Tourist-Month}
 
 O segundo gráfico mostra o porquê do ano não demonstrar influência na chegada pela regressão. As oscilações causadas pelo efeito dos meses são tão grandes que elas mascaram o crescimento anual do número de turistas. A conclusão aqui é a de que o turismo está de fato crescendo com os anos, mas pouco.
+
+\subsection{As Hospedagens, que oferecem X idioma no atendimento a Turistas estrangeiros, influênciam no fluxo de Turistas}
+
+\includegraphics[width=\textwidth]{Segment-Host-Tourist}
+\includegraphics[width=\textwidth]{Segment-Host-Tourist-2}
+
+Para avaliar as hipóteses, criamos gráficos das séries temporais obtidas - Chegadas de Turistas e Quantidade de Hospedagens - e comparamos as variáveis nos dois gráficos de acordo com o intervalo de tempo, no caso, comparamos a quantidade de hospedagens que ofereciam atendimento em espanhol com a série temporal da quantidade de turistas argentinos que chegavam.
+
+Devido a encontrarmos um pico na quantidade de hospedagens no ano de 2016 pudemos ver que as Olimpíadas influenciaram na quantidade de hospedagens.
+
+\section{Conclusão}
+Analisando os dados pudemos entender um pouco sobre a situação do turismo brasileiro, quem nos visita, quando somos visitados, para onde esses turistas vão, e saber o que os atrai e o que não os atrai para cá.
 
 \end{document}
